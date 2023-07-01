@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "2019771135:AAFb3zLcyWQQG7w6xN4Ewr9Px0OWQgIjcIE"
+    tgkey = "6273788754:AAGEdvX6MdTI7dkG8BfHKFDpyrpIF-O0uJo"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'KSB (by @Ishank_Kaushik)'
-username = 'thejarvis_robot'
+botname = 'IAB'
+username = 'ishank_ai_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,9 +66,9 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'KSB (by @Ishank_Kaushik'
-        username = 'thejarvis_robot'
-        update.message.reply_text('Hi')
+        botname = 'IAB'
+        username = 'ishank_ai_bot'
+        update.message.reply_text('Hi, I am Ishank Ai Bot (IAB)')
         return 
     else:
         update.message.reply_text('I am currently talking to someone else. Can you please wait ' + left + ' seconds?')
@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'KSB (by @Ishank_Kaushik'
-        username = 'thejarvis_robot'
+        botname = 'IAB'
+        username = 'ishank_ai_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'KSB (by @Ishank_Kaushik'
-        username = 'thejarvis_robot'
+        botname = 'IAB'
+        username = 'ishank_ai_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'KSB (by @Ishank_Kaushik'
-        username = 'thejarvis_robot'
+        botname = 'IAB'
+        username = 'ishank_ai_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,8 +189,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'thejarvis_robot'
-                botname = 'KSB (by @Ishank_Kaushik'
+                username = 'ishank_ai_bot'
+                botname = 'IAB'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
